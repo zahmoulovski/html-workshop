@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Portfolio - Project 2</title>
+        <title>Portfolio - Homepage</title>
+        <link rel="stylesheet" href="css/sltyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <!--start of navbar-->
         <nav>
             <ul>
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#project">Project</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-                <a href="contact.html"><button>Login</button></a>
+                <li><a href="./index.html#home">Home</a></li>
+                <li><a href="./index.html#project">Project</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+                <a href="contact.html"><button class="nav-btn">Login</button></a>
             </ul>
         </nav>
         <!--end of navbar-->
@@ -25,19 +27,39 @@
             </div>
         </section>
         <!--start of section 1-->
-        <!--start section footer-->
-        <div>
-            <ul>
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#project">Project</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-                <a href="contact.html"><button>Login</button></a>
-            </ul>
+        <br>
+        <!--start section contact-->
+        <section id="contact">
+            <div class="map">
+                <form>
+                <h3>Send us your message</h3>
+                <label for="name">Name : </label><br>
+                <input type="text" id="name" placeholder="Foulen"><br>                <label for="lastname">Last name : </label><br>
+                <input type="text" id="lastname" placeholder="El Fouleni"><br>
+                <label for="email">E-mail : </label><br>
+                <input type="text" id="email" placeholder="foulen.elfouleni@example.com"><br>
+                <label for="message">Message</label><br>
+                <textarea id="Message" name="Message"  placeholder="Don't be shy, send me your comment :)"></textarea>
+                <br><input class="submit-btn" type="submit" value="Submit">
+            </form>
             <!--this "iframe" tag was a copy paste from google maps-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12783.605011770449!2d10.2194488!3d36.7729363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x14993ef2dc98e339!2sKLARRION!5e0!3m2!1sen!2stn!4v1662410327846!5m2!1sen!2stn" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12783.605011770449!2d10.2194488!3d36.7729363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x14993ef2dc98e339!2sKLARRION!5e0!3m2!1sen!2stn!4v1662410327846!5m2!1sen!2stn" width="80%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <!--this "iframe" tag was a copy paste from google maps-->
-            <p>Copyright 2022 - Med Yassine</p>
         </div>
-        <!--end section footer-->
+        </section>
+        <!--end section contact-->
+        <!--start section footer-->
+        <div class="footer">
+            <nav>
+                <ul>
+                    <li><a href="./index.html#home">Home</a></li>
+                    <li><a href="./index.html#project">Project</a></li>
+                    <li><a href="./index.html#contact">Contact</a></li>
+                    <a href="contact.html"><button class="nav-btn">Login</button></a>
+                </ul>
+                <p class="copyrights">© Copyright 2022 - Med Yassine</p>
+            </nav>
+        </div>
+        <!--end section footer--> 
     </body>
 </html>
